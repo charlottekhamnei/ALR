@@ -22,10 +22,14 @@
 /* Global Styles*/
 
 body {
-    background-color: var(--midnightsky);
     color: white;
     margin: 0;
     padding: 0;
+    background-image: url(../images/mobilebackground.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    background-position-y: top;
 }
 
 /* Text Style Declarations */
@@ -182,6 +186,7 @@ td {
 #trademark {
     text-align: center;
 }
+
 
 /* ~ RESPONSIVE SIZING ~ */
 @media screen and (min-width: 945px) {
