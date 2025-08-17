@@ -1,0 +1,107 @@
+@charset "UTF-8";
+@import "global.css";
+
+@import url(./global.css);
+
+  /* Masonry stlye gallery view styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.galleryContainer {
+    column-count: 3;
+    column-gap: 0;
+    width: 100vw;
+}
+
+.galleryItem {
+    display: block;
+    width: 100%; 
+    margin-bottom: 0;
+}
+
+.galleryItem img {
+    width: 100%;
+    height: auto; 
+    display: block;
+}
+
+/* Modal View Styling */
+
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(58, 86, 131, 0.8);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.modal.show {
+    display: flex;
+    opacity: 1;
+}
+
+.modal-content {
+    max-width: 80%;
+    max-height: 80%;
+    margin-right: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Float header */
+
+.galleryContainer {
+    position: relative;
+}
+
+.galleryContainer h2 {
+    position: absolute;
+    top: 30px;
+    left: 25px;
+    z-index: 10;
+    color: white;
+}
+
+/* Responsive Style */ 
+
+@media screen and (max-width: 705px) {
+    .modal {
+        display: flex;
+        flex-flow: column;
+    }
+    .modal-content {
+        max-width: 90%;
+        max-height: 90%;
+    }
+}
+
+@media screen and (min-width: 945px) {
+    #navImgCtnr {
+        width: 100px;
+    }
+
+}

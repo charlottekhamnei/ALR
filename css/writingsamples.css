@@ -1,0 +1,27 @@
+@charset "UTF-8";
+@import "./global.css";
+
+#sample {
+    display: flex;
+    justify-content: center;
+}
+
+embed {
+    width: 90%;
+    justify-self: center;
+}
+
+h2 {
+    margin-left: 20px;
+}
+
+/* Responsive Style */ 
+
+@media screen and (min-width: 945px) {
+    #sample embed {
+        width: 50%;
+        justify-self: center;
+        height: 500px;
+    }
+
+}

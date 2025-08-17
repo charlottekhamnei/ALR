@@ -1,0 +1,195 @@
+@charset "UTF-8";
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Stalinist+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yrsa:ital,wght@0,300..700;1,300..700&display=swap');
+
+ /* Variable Declarations*/ 
+ html {
+    /* Colors */
+    --moonglow: #F5E960;
+    --midnightsky: #3A5683;
+    --bisexualpurple: #986EA0;
+    --femmeblush: #F686BD; 
+    --collapsingstar: #D52941; 
+    /* Font declarations will be done with predefined tags */ 
+ }
+
+ :root {
+    margin: 0;
+    padding: 0;
+ }
+
+/* Global Styles*/
+
+body {
+    background-color: var(--midnightsky);
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* Text Style Declarations */
+
+h1 {
+    font-family: "Stalinist One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+}
+
+h2 {
+    font-family: "Stalinist One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+}
+p {
+    font-family: "Yrsa", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover, a:active {
+    color: inherit;
+}
+
+/* ~ NAV BAR ~ */
+
+nav {
+    display: inline-flex;
+    justify-self: space-between;
+    width: 100%;
+    padding: 20px 0;
+    position: sticky;
+}
+
+#navCtnr {
+    align-items: center;
+    display: inline-flex;
+    justify-self: left;
+}
+
+
+#navImgCtnr {
+    margin-right: 20px;
+    width: 50px;
+    height: 50px;
+}
+
+#navImgCtnr img {
+    width: 100%;
+}
+
+#navContainer {
+    display: none;
+}
+
+#hamburgerMenu {
+    display: block;
+}
+
+nav {
+    justify-content: space-between;
+}
+
+/* ~ MODAL~ */
+
+/* Default hidden state for hamburger menu */
+#hamburgerMenu {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+#navContainer {
+        display: none;
+    }
+    
+    #hamburgerMenu {
+        display: block;
+    }
+
+    nav {
+        justify-content: space-around;
+    }
+/* Modal menu styling */
+#modalMenu {
+    display: none;
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(58, 86, 131, 0.9);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 10;
+}
+
+#modalContent {
+    background: none;
+    padding: 0;
+    text-align: center;
+}
+
+#modalMenu a {
+    display: block;
+    padding: 20px;
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+}
+
+#closeModal {
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    display: block;
+    margin-bottom: 10px;
+}
+
+
+
+
+/* ~ FOOTER ~ */
+
+#footer {
+    justify-items: center;
+    padding: 30px 0;
+}
+
+table {
+    width: 100%;
+}
+
+td {
+    text-align: center;
+    padding: 5px;
+    font-family: "Yrsa", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+}
+
+#trademark {
+    text-align: center;
+}
+
+/* ~ RESPONSIVE SIZING ~ */
+@media screen and (min-width: 945px) {
+    nav {
+        justify-content: space-between;
+    }
+    
+    nav * {
+        padding: 0 10px;
+    }
+}

@@ -1,0 +1,25 @@
+@charset "UTF-8";
+@import "global.css";
+
+.splash {
+    width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    position: relative;
+}
+.splash img {
+    width: 100%;
+    box-shadow: inset 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+    filter: saturate(0);
+}
+a:hover img {
+    filter: saturate(1);
+}
+
+.splash h2 {
+    position: absolute;
+    top: 15px;
+    left: 25px;
+    z-index: 1;
+    color: white;
+}

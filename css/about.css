@@ -1,0 +1,40 @@
+@charset "UTF-8";
+@import "global.css";
+
+
+#aboutContainer {
+    padding: 0 65px 65px;
+    display: inline-flex;
+    justify-content: space-between;
+    align-content: first baseline;
+    width: auto;
+}
+
+
+#aboutContainer div {
+    width: 50%;
+    height: auto;
+} 
+
+#aboutContainer div img {
+    width: 100%;
+    height: auto;
+}
+
+#aboutContainer p {
+    font-size: 16px;
+}
+
+
+/* Responsive Style */ 
+
+@media screen and (min-width: 609px) {
+    #aboutContainer div img {
+        width: 50%;
+        height: auto;
+    }
+
+    #aboutContainer {
+        justify-self: center;
+    } 
+}
