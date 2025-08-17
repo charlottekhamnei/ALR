@@ -197,4 +197,14 @@ td {
     nav * {
         padding: 0 10px;
     }
+
+}
+@media screen and (min-width: 1350px) {
+    body {
+        background-image: url(../images/desktopbackground.png);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100%;
+        background-position-y: top;
+    }
 }
